@@ -1,0 +1,74 @@
+.hide-element, .primary.hide-element {
+  display: none;
+}
+
+#search-form .fa {
+  margin: 0 auto;
+  font-size: 3.9em;
+}
+
+#search-form .search-error.hide-element {
+  display: none;
+}
+
+.search-error-message {
+  font-style: italic;
+  text-align: center;
+  transition: all 2.5s ease-out;
+}
+
+#results-count {
+  font-size: 0.9em;
+  margin: 0 6px 0 0;
+}
+
+.search-query {
+  flex: 1 1 auto;
+  font-size: 1.5em;
+}
+
+.search-result-page-title {
+  font-size: 1.4em;
+  line-height: 1.2;
+}
+
+.search-detail {
+  font-size: 1.4em;
+}
+
+.search-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-results a {
+  text-decoration: none;
+}
+
+#search-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 0 2em 10px 0;
+}
+
+#query {
+  font-weight: 700;
+}
+
+.y665 {
+  animation: fade 5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
