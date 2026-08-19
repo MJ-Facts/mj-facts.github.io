@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /404/
-Sitemap: https://mj-facts.github.io/sitemap.xml
