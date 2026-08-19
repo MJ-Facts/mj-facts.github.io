@@ -1,0 +1,31 @@
+.heading-2-1 {
+  font-family: Poppins, sans-serif;
+  color: var(--bs-danger);
+  letter-spacing: 1px;
+  /*border-bottom: 2.4px solid var(--bs-body-color);*/
+  margin: 10px 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-right: 0px;
+  padding-left: 0px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media (min-width: 300px) {
+  .heading-2-1 {
+    font-size: 18.4px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: 768px) {
+  .heading-2-1 {
+    font-size: 21.4px;
+    line-height: 30px;
+  }
+}
+

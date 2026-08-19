@@ -1,0 +1,21 @@
+.nav-link:focus, .nav-link:hover {
+  color: #ffffff;
+}
+
+.nav-link {
+  display: block;
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: #000000;
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  letter-spacing: 2px;
+}
+
+.nav-item {
+  padding: 0px;
+  margin-top: 0px;
+}
+
