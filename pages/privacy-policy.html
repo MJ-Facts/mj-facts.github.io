@@ -22,10 +22,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700&amp;subset=latin-ext,vietnamese&amp;display=swap">
-    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="/assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="/assets/css/bss-overrides.css">
-    <link rel="stylesheet" href="/assets/css/./embed/animation/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/animate.min.css">
     <link rel="stylesheet" href="/assets/css/Block-quotation-2.css">
     <link rel="stylesheet" href="/assets/css/Blog-List.css">
     <link rel="stylesheet" href="/assets/css/Breadcrumbs.css">
@@ -47,7 +46,7 @@
     <link rel="stylesheet" href="/assets/css/Quotation-2.css">
     <link rel="stylesheet" href="/assets/css/Quotation-3.css">
     <link rel="stylesheet" href="/assets/css/scroll-padding-top.css">
-    <link rel="stylesheet" href="/assets/css/search-box.css">
+    <link rel="stylesheet" href="/assets/css/Search-Facility-x20.css">
     <link rel="stylesheet" href="/assets/css/Small-Text.css">
     <link rel="stylesheet" href="/assets/css/Video-1.css">
     <link rel="stylesheet" href="/assets/css/Video.css">
@@ -62,7 +61,7 @@
                         <li class="nav-item me-0"><a class="nav-link me-2" data-bss-hover-animate="pulse" href="/pages/about.html"><i class="icon ion-ios-chatboxes-outline" style="margin-right:7px;font-size:20px;"></i>About</a></li>
                         <li class="nav-item"><a class="nav-link me-2" data-bss-hover-animate="pulse" href="/articles.html"><i class="icon ion-ios-lightbulb-outline" style="margin-right:7px;font-size:20px;"></i>Articles</a></li>
                         <li class="nav-item"><a class="nav-link me-2" data-bss-hover-animate="pulse" href="/categories.html"><i class="icon ion-ios-cloud-outline" style="margin-right:7px;font-size:20px;"></i>Categories</a></li>
-                        <li class="nav-item"><a class="nav-link me-2" data-bss-hover-animate="pulse" data-bs-target="#search-facility-1" data-bs-toggle="modal" href="#"><i class="icon ion-ios-search-strong" style="margin-right:7px;font-size:20px;"></i>search</a></li>
+                        <li class="nav-item"><a class="nav-link me-2" data-bss-hover-animate="pulse" data-bs-target="#search-box-1" data-bs-toggle="modal" href="#"><i class="icon ion-ios-search-strong" style="margin-right:7px;font-size:20px;"></i>search</a></li>
                     </ul>
                 </div>
             </div>
@@ -108,44 +107,38 @@
         <div style="padding-top:40px;padding-bottom:40px;">
             <p class="p-1" style="color:#000000;text-align:center;">Copyright – MJ Facts</p>
         </div>
-        <div class="modal fade search-facility-1" role="dialog" tabindex="-1" id="search-facility-1" style="text-align: center;">
-            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal fade" role="dialog" tabindex="-1" id="search-box-1">
+            <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
-                    <div class="modal-body sws3" style="padding-top: 40px;">
-                        <div class="container search-container">
-                            <div class="row">
-                                <div class="col-12 sidebar">
-                                    <div id="site-search" class="cde33">
-                                        <form id="search-form" class="3e1" name="searchForm" role="form" onsubmit="return false">
-                                            <div class="input-group mb-3"><span class="input-group-text"><i class="fas fa-search" style="font-size: 44px;"></i></span><input class="form-control form-control-lg search-input" type="text" id="search" autocomplete="off" name="q" placeholder="Enter a search"></div>
-                                            <div class="search-error hide-element"><span class="search-error-message">Text</span></div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="col-12 search-results hide-element">
-                                    <div id="search-header" class="xsxs">
-                                        <div class="search-query float-start">
-                                            <h4>Search term: '<span id="query"></span>'</h4>
-                                        </div>
-                                        <div class="search-query float-end text-end">
-                                            <h4>&nbsp;<span id="results-count">ddde</span><span id="results-count-text"></span></h4>
-                                        </div>
-                                    </div>
-                                    <ul class="sxsx"></ul>
-                                </div>
+                    <div class="search-wrapper">
+                        <div class="search-heading">
+                            <h2>Search</h2>
+                            <p>Find articles, evidence, investigations and discussions across the website.</p>
+                        </div>
+                        <form id="search-form-001" class="search-form-001">
+                            <div class="search-field"><input class="form-control" type="search" aria-label="Search" autocomplete="off" id="search" placeholder="What are you looking for?"><button class="search-button" type="submit">Search</button></div>
+                        </form>
+                        <div class="search-error hide-element" role="status" aria-live="polite"><span class="search-error-message">Please enter a search term.</span></div>
+                        <div id="site-search" class="search-results hide-element">
+                            <div class="results-header">
+                                <div><span class="results-label">SEARCH RESULTS</span>
+                                    <div class="results-summary"><strong id="results-count">0</strong><span id="results-count-text"> results</span></div>
+                                </div><button id="clear-search-results-modal" class="clear-search-results" type="button"><span aria-hidden="true">×</span> Clear </button>
                             </div>
+                            <div class="results-query"><span>Results for: </span><strong id="query"></strong></div>
+                            <ul class="list-unstyled mb-0"></ul>
+                            <div class="search-footer"><span>Search powered by MiniSearch</span></div>
                         </div>
                     </div>
-                    <div class="modal-footer"><button class="btn btn-dark clear-search-results hide-element" id="clear-search-results-modal" type="button">Clear Results</button><button class="btn btn-primary sxsaa2" type="button" data-bs-dismiss="modal">Close</button></div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button></div>
                 </div>
             </div>
         </div>
     </footer>
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="/assets/js/bs-init.js"></script>
-    <script src="https://unpkg.com/lunr/lunr.js"></script>
-    <script src="/assets/js/search-box-search-box-document.js"></script>
-    <script src="/assets/js/search-box-search-box-file.js"></script>
+    <script src="/assets/js/search-documents.js"></script>
+    <script src="/assets/js/search-engine.js"></script>
 </body>
 
 </html>
