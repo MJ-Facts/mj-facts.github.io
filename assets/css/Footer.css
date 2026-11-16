@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  .footer-text {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+
+@media (min-width: 300px) {
+  .font-size {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .font-size {
+    font-size: 20px;
+  }
+}
+
